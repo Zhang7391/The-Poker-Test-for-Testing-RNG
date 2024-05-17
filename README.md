@@ -30,7 +30,7 @@ But, only the test "The Poker Test" has been implemented.
 | Length of Run	| Required Interval |
 | :-----------:	| :---------------- |
 | 1             | 2,315 – 2,685     |
-| 2             | 1,114 – 1,386     |
+| 2             | 1,114 - 1,386     |
 | 3             | 527 - 723         |
 | 4             | 240 - 384         |
 | 5             | 103 - 209         |
@@ -45,7 +45,7 @@ But, only the test "The Poker Test" has been implemented.
 
 ## The Monobit Test
 - FIPS 140-1: 9,654 < x < 10,346  
-- FIPS 140-2: 9,725 < X < 10,275  
+- FIPS 140-2: 9,725 < x < 10,275  
 
 ## The Long Run Test
 - FIPS 140-1: A long run is defined to be a run of length 34 or more (of either zeros or ones)  
@@ -55,3 +55,4 @@ But, only the test "The Poker Test" has been implemented.
 1. National Institute of Standards and Technology. (1994, January 11). FIPS PUB 140-1. Security Requirements for Cryptographic Modules. https://csrc.nist.gov/pubs/fips/140-1/upd1/final  
 2. National Institute of Standards and Technology. (2001, May 25). FIPS PUB 140-2. Security Requirements for Cryptographic Modules. https://csrc.nist.gov/pubs/fips/140-2/upd2/final  
 3. S. Snouffer (NIST), Annabelle Lee (NIST), Arthur Oldehoeft (NIST). (2001, June). NIST SP 800-29. A Comparison of the Security Requirements for Cryptographic Modules in FIPS 140-1 and FIPS 140-2. https://csrc.nist.gov/pubs/sp/800/29/final  
+4. Ananda Vithanage, Takakuni Shimizu. (2003, October 2). FIPS 140-2(Change Notice 1) Random Number Tests. －Distribution Functions and Observed values of RPG100. https://www.fdk.com/cyber-e/pdf/HM-RAE103.pdf  
