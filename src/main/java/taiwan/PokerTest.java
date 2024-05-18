@@ -6,7 +6,8 @@ import java.security.InvalidParameterException;
 
 import static java.math.RoundingMode.HALF_UP;
 import static java.math.MathContext.UNLIMITED;
-
+import static taiwan.PokerTestData.INT_DATA_NUMBER;
+import static taiwan.PokerTestData.BYTE_DATA_NUMBER;
 
 public class PokerTest
 {
@@ -21,7 +22,7 @@ public class PokerTest
 	public boolean run(byte[] data)
 	{
 		// Test data MUST BE 20000 bits.
-		if(data.length != 2500) throw lengthInvalid();
+		if(data.length != BYTE_DATA_NUMBER) throw lengthInvalid();
 
 		// Storing the occurrences of the 16 conditions.
 		// 0000, 0001, 0010, ..., 1111
@@ -44,7 +45,7 @@ public class PokerTest
 	public boolean run(int[] data)
 	{
 		// Test data MUST BE 20000 bits.
-		if(data.length != 625) throw lengthInvalid();
+		if(data.length != INT_DATA_NUMBER) throw lengthInvalid();
 
 		// Storing the occurrences of the 16 conditions.
 		// 0000, 0001, 0010, ..., 1111

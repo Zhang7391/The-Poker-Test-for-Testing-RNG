@@ -14,6 +14,8 @@ public class Test_PokerTest
 	private final PokerTest pokerTest = new PokerTest();
 	private final SecureRandom random = new SecureRandom();
 
+	private final int TESTCASE_NUMBER = 2000;
+
 
 	@Test
 	public void byteRNG_Checker()
@@ -21,7 +23,7 @@ public class Test_PokerTest
 		final byte[] data = new byte[BYTE_DATA_NUMBER];
 		final String exceptionMessage = "Byte RNG not passed.";
 
-		for(int x=0; 2000>x; x++)
+		for(int x=0; TESTCASE_NUMBER>x; x++)
 		{
 			random.nextBytes(data);
 			assertTrue(pokerTest.run(data), "Byte RNG not passed.");
@@ -34,7 +36,7 @@ public class Test_PokerTest
 		final int[] data = new int[INT_DATA_NUMBER];
 		final String exceptionMessage = "Integer RNG not passed.";
 
-		for(int x=0; 2000>x; x++)
+		for(int x=0; TESTCASE_NUMBER>x; x++)
 		{
 			for(int y=0; INT_DATA_NUMBER>y; y++) data[y] = random.nextInt();
 			assertTrue(pokerTest.run(data), exceptionMessage);
