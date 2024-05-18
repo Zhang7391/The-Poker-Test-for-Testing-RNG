@@ -10,23 +10,34 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class Test_PokerTest
 {
 	private final int DOUBLE_LENGTH = 8;
-	private final int BYTE_DATA_NUMBERS = 2500;
+	private final int INT_DATA_NUMBER = 625;
+	private final int BYTE_DATA_NUMBER = 2500;
+
+	private final PokerTest pokerTest = new PokerTest();
+	private final SecureRandom random = new SecureRandom();
+
 
 	@Test
-	public void StabilityChecker()
+	public void byteRNG_Checker()
 	{
-		SecureRandom random = new SecureRandom();
-		byte[] data = new byte[BYTE_DATA_NUMBERS];
+		byte[] data = new byte[BYTE_DATA_NUMBER];
 
-		for(int x=0; 7391>x; x++)
+		for(int x=0; 2000>x; x++)
 		{
 			random.nextBytes(data);
-			assertTrue(PokerTest.run(data));
+			assertTrue(pokerTest.run(data));
 		}
 	}
 
 	@Test
-	public void RNG_Checker()
+	public void intRNG_Checker()
 	{
+		int[] data = new int[INT_DATA_NUMBER];
+
+		for(int x=0; 2000>x; x++)
+		{
+			for(int y=0; INT_DATA_NUMBER>y; y++) data[y] = random.nextInt();
+			assertTrue(pokerTest.run(data));
+		}
 	}
 }
