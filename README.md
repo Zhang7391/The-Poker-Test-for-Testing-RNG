@@ -12,6 +12,15 @@ FIPS 140-2 has four tests for randomness:
 
 But, only the test "The Poker Test" has been implemented.  
 
+# Getting start
+## Maven
+
+```sh
+git clone https://github.com/Zhang7391/The-Poker-Test-for-Testing-RNG.git
+cd The-Poker-Test-for-Testing-RNG
+mvn clean test
+```
+
 # The Criteria for Tests
 ## The Runs Test
 - FIPS 140-1:  
@@ -51,7 +60,7 @@ But, only the test "The Poker Test" has been implemented.
 - FIPS 140-1: A long run is defined to be a run of length 34 or more (of either zeros or ones)  
 - FIPS 140-2: A long run is defined to be a run of length 26 or more (of either zeros or ones)  
 
-## References
+# References
 1. National Institute of Standards and Technology. (1994, January 11). FIPS PUB 140-1. Security Requirements for Cryptographic Modules. https://csrc.nist.gov/pubs/fips/140-1/upd1/final  
 2. National Institute of Standards and Technology. (2001, May 25). FIPS PUB 140-2. Security Requirements for Cryptographic Modules. https://csrc.nist.gov/pubs/fips/140-2/upd2/final  
 3. S. Snouffer (NIST), Annabelle Lee (NIST), Arthur Oldehoeft (NIST). (2001, June). NIST SP 800-29. A Comparison of the Security Requirements for Cryptographic Modules in FIPS 140-1 and FIPS 140-2. https://csrc.nist.gov/pubs/sp/800/29/final  
