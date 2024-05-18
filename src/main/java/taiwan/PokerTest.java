@@ -35,13 +35,11 @@ public class PokerTest
 			}
 		}
 
-		for(int x : table) System.out.println(x);
-		System.out.println("---------");
-
 		double result = 0.0D;
 
-		for(int x=0; 16>x; x++) result += (pow((double)table[x], 2.0D) - 5000D);
+		for(int x=0; 16>x; x++) result += pow((double)table[x], 2.0D);
 		result *= (16.0D / 5000.0D);
+		result -= 5000D;
 
 
 		if(46.17D > result && result > 2.16D) return true;

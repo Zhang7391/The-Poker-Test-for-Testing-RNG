@@ -4,6 +4,8 @@ import taiwan.PokerTest;
 import org.junit.jupiter.api.Test;
 import java.security.SecureRandom;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class Test_PokerTest
 {
@@ -13,13 +15,14 @@ public class Test_PokerTest
 	@Test
 	public void StabilityChecker()
 	{
-		int now = 0;
+		SecureRandom random = new SecureRandom();
 		byte[] data = new byte[BYTE_DATA_NUMBERS];
 
-		SecureRandom random = new SecureRandom();
-		random.nextBytes(data);
-
-		PokerTest.run(data);
+		for(int x=0; 7391>x; x++)
+		{
+			random.nextBytes(data);
+			assertTrue(PokerTest.run(data));
+		}
 	}
 
 	@Test
