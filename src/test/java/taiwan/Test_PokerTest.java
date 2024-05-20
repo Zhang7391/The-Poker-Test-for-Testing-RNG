@@ -23,10 +23,8 @@ public class Test_PokerTest
 	@Test
 	public void byteRNG_Checker()
 	{
-		final byte[] data = new byte[BYTE_DATA_NUMBER];
-		final String exceptionMessage = "Byte RNG not passed.";
-
 		BigDecimal failCounter = BigDecimal.ZERO;
+		final byte[] data = new byte[BYTE_DATA_NUMBER];
 
 		for(int x=0; TESTCASE_NUMBER>x; x++)
 		{
@@ -42,10 +40,8 @@ public class Test_PokerTest
 	@Test
 	public void intRNG_Checker()
 	{
-		final int[] data = new int[INT_DATA_NUMBER];
-		final String exceptionMessage = "Integer RNG not passed.";
-
 		BigDecimal failCounter = BigDecimal.ZERO;
+		final int[] data = new int[INT_DATA_NUMBER];
 
 		for(int x=0; TESTCASE_NUMBER>x; x++)
 		{
